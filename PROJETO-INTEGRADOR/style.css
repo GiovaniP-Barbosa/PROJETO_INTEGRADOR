@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    header {
+        display: flex;
+        align-items: flex-start; /* Alinha para o topo */
+        height: 100px; /* Ajuste o valor conforme necessário */
+     }
+     
+
+ }
+ 
+header{
+    background-color: rgb(43, 126, 198);
+    width: 100%;
+    height: 80px; /* Ajuste o valor conforme necessário */
+     
+}
+.Menu {
+    margin: auto;
+    max-width: 1080px; /* Adicionando unidades, como pixels, à max-width */
+    display: flex;
+    align-items: flex-end; 
+    width: 1000%;  
+
+}
+.Inicio
+{
+    margin: auto;
+}
+    
+    
+       
