@@ -1,36 +1,198 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.container {
-    header {
+<html lang="pt-br"><head><script type="text/javascript" src="/___vsco
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:aquamarine;
+        }
+    
+        header {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 10px;
+            background-color: #1f80d5;
+            border: #1f80d5;
+        }
+    
+        nav {
+            display: flex;
+            align-items: flex-start; 
+            text-size-adjust: 50;
+        }
+    
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+    
+        }
+    
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+    
+        h2 {
+            color: #333;
+        }
+    
+        .main {
+            padding: 50px;
+            display: flex;
+        }
+    
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        li {
+            padding: 50px;
+            margin-bottom: 10px;
+            display: inline-block;
+            margin-right: 10px; 
+        }
+    
+        div {
+            padding: auto;
+        }
+    
+        a {
+            padding: 5px;
+            margin-inline-start: auto;
+            align-items: end;
+            box-shadow: #1f80d5;
+        }
+    
+        p {
+            font-family: sans-serif;
+            color: black;
+            font-size: 20px;
+        }
+    
+        .caixa {
+            border: 2px solid chocolate;
+            padding: 20px;
+            margin:  10px; 
+            border-radius: 15px;
+            width: 240px;
+            text-align: center;
+            align-items: center;
+            
+            
+        }
+    
+        .perfil {
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            margin-bottom: 10px;
+        }
+    
+        .avaliacao {
+            color: #f39c12; 
+            margin-bottom: 10px;
+        }
+    
+        .comentario {
+            font-style: italic;
+            color: #666;
+        }
+    
+        .feed  {
+            border: 1px solid #cccccc;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px; 
+            width: 340px; 
+            height: 10;
+            display: flex; 
+            justify-content: center; 
+            background-color: #e0e0e0; 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+            align-items: center;
+        }
+        .feed2{
+            border: 1px solid #cccccc;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px; 
+            width: 340px; 
+            height: 10;
+            display: flex; 
+            justify-content: center; 
+            background-color: #e0e0e0; 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+            align-items: end;
+        }
+        .conteiner{
+            display: flex;
+            justify-content: space-around;
+        }
+        .coments{
         display: flex;
-        align-items: flex-start; /* Alinha para o topo */
-        height: 100px; /* Ajuste o valor conforme necessário */
-     }
-     
+        justify-content: end;
+        }
+        nav.coments a img {
+        width: 100px; /* Defina o tamanho desejado para as imagens */
+        height:100px; /* Defina a altura desejada para as imagens */
+        }
 
- }
- 
-header{
-    background-color: rgb(43, 126, 198);
-    width: 100%;
-    height: 80px; /* Ajuste o valor conforme necessário */
-     
-}
-.Menu {
-    margin: auto;
-    max-width: 1080px; /* Adicionando unidades, como pixels, à max-width */
-    display: flex;
-    align-items: flex-end; 
-    width: 1000%;  
+        .comentarios{
+        display: flex;
+        justify-content: space-around;
+        align-items:baseline;
+        flex-wrap: wrapinicio;
+        
+        }
+    </style>
+    <title style="height: auto;">FEED</title>
+</head>
+<body>
 
-}
-.Inicio
-{
-    margin: auto;
-}
+    <header>
+        <div class="logo">
+            <img src="/src/img/JOBS.png" alt="Logo da Empresa" style=
+        </div>
+        <nav class="coments">
+            <a href="index.html"><img src="/src/img/INICIO.png" alt="
+            <a href="vagas.html"><img src="/src/img/VAGAS.png" alt=""
+            <a href="cursos.html"><img src="/src/img/CURSOS.png" alt=
+            <a href="feed.html"><img src="/src/img/FEED.png" alt=""><
+            <a href="notificacoes.html"><img src="/src/img/NOTIFICAÇO
+            <a href="perfil.html"><img src="/src/img/PERFIL.png" alt=
+            
+        </nav>
+    </header>
     
-    
-       
+    <title>Caixa com Foto de Perfil, Avaliação e Comentários</title>
+
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

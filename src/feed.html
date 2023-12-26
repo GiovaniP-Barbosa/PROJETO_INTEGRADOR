@@ -7,6 +7,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-color:aquamarine;
         }
     
         header {
@@ -28,6 +29,7 @@
             margin-right: 15px;
             text-decoration: none;
             color: #333;
+    
         }
     
         .logo img {
@@ -39,8 +41,9 @@
             color: #333;
         }
     
-        main {
+        .main {
             padding: 50px;
+            display: flex;
         }
     
         ul {
@@ -73,12 +76,13 @@
         }
     
         .caixa {
-            border: 1px solid #ccc;
+            border: 2px solid chocolate;
             padding: 20px;
             margin:  10px; 
             border-radius: 15px;
             width: 240px;
             text-align: center;
+            align-items: center;
             
             
         }
@@ -113,37 +117,58 @@
             background-color: #e0e0e0; 
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: large;
+            align-items: center;
         }
         .feed2{
             border: 1px solid #cccccc;
-padding: 20px;
-margin: 20px;
-border-radius: 15px; 
-width: 340px; 
-height: 10;
-display: flex; 
-justify-content: center; 
-background-color: #e0e0e0; 
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: large;
-align-items: end;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px; 
+            width: 340px; 
+            height: 10;
+            display: flex; 
+            justify-content: center; 
+            background-color: #e0e0e0; 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+            align-items: end;
+        }
+        .conteiner{
+            display: flex;
+            justify-content: space-around;
+        }
+        .coments{
+        display: flex;
+        justify-content: end;
+        }
+        nav.coments a img {
+        width: 100px; /* Defina o tamanho desejado para as imagens */
+        height:100px; /* Defina a altura desejada para as imagens */
+        }
+
+        .comentarios{
+        display: flex;
+        justify-content: space-around;
+        align-items:baseline;
+        flex-wrap: wrapinicio;
+        
         }
     </style>
-    <title>FEED</title>
+    <title style="height: auto;">FEED</title>
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <img src="/PROJETO-INTEGRADOR/src/img/logo e itens cabecalho/Design sem nome.png" alt="Logo da Empresa">
+            <img src="/src/img/JOBS.png" alt="Logo da Empresa" style="height: 100px;width: 100px;">
         </div>
-        <nav>
-            <a>INICIO</a>
-            <a href="#">VAGAS</a>
-            <a href="#">CURSOS</a>
-            <a href="#">FEED</a>
-            <a href="#">NOTIFICAÇOES<img src="#" alt=""></a>
-            <a href="#">PERFIL</a>
+        <nav class="coments">
+            <a href="index.html"><img src="/src/img/INICIO.png" alt=""></a>
+            <a href="vagas.html"><img src="/src/img/VAGAS.png" alt=""></a>
+            <a href="cursos.html"><img src="/src/img/CURSOS.png" alt=""></a>
+            <a href="feed.html"><img src="/src/img/FEED.png" alt=""></a>
+            <a href="notificacoes.html"><img src="/src/img/NOTIFICAÇOES.png" alt=""></a>
+            <a href="perfil.html"><img src="/src/img/PERFIL.png" alt=""></a>
             
         </nav>
     </header>
@@ -151,39 +176,44 @@ align-items: end;
     <title>Caixa com Foto de Perfil, Avaliação e Comentários</title>
 </head>
 <body>
-    <div class="feed">FEED</p></div>
-    <div class="feed2"></p>CASOS DE SUCESSO !!!</div>
-    
-</div>
+    <main class="conteiner">
+        
+        <div class="feed">FEED</p></div>
+        <div class="feed2"></p>CASOS DE SUCESSO !!!</div></main>
+    </div>
+    <br><br><br>
+    </main>
+    <main class="comentarios">
 
     <div class="caixa">
-        <img class="perfil" src="/PROJETO_INTEGRADOR/PROJETO-INTEGRADOR/src/img/rostos/ivete.webp" alt="Foto de Perfil">
+        <img class="perfil" src="/src/img/rostos/deolane.webp" alt="Foto de Perfil">
         <div class="avaliacao">★★★★☆</div>
         <p class="comentario">Aprendi muitos cursos sobre tecnologia no site, e agora consegui meu primeiro emprego tbm !!!! obrigado projeto integrador <br><br><b></b>@proj.integrador</p>
     </div>
 
     <div class="caixa">
-        <img class="perfil" src="/PROJETO_INTEGRADOR/PROJETO-INTEGRADOR/src/img/rostos/ronaldinho.jpg" alt="Outra Foto de Perfil">
+        <img class="perfil" src="/src/img/rostos/ronaldinho.jpg" alt="Outra Foto de Perfil">
         <div class="avaliacao">★★★★★</div>
         <p class="comentario">Site serio e responsavel,
             todas vagas que me candidatei sempre me deram feedback!!<br><br><b></b>@proj.integrador</p>
     </div>
     <div class="caixa">
-        <img class="perfil" src="/PROJETO_INTEGRADOR/PROJETO-INTEGRADOR/src/img/rostos/ronaldo.png" alt="Outra Foto de Perfil">
+        <img class="perfil" src="/src/img/rostos/ivete.webp" alt="Outra Foto de Perfil">
         <div class="avaliacao">★★★★★</div>
         <p class="comentario">Sem o Site eu nao teria conseguido alavancar minha carreira !!! top demais<br><br><b></b>@proj.integrador</p>
     </div>
     <div class="caixa">
-        <img class="perfil" src="/PROJETO_INTEGRADOR/PROJETO-INTEGRADOR/src/img/rostos/silvio.webp" alt="Outra Foto de Perfil">
+        <img class="perfil" src="/src/img/rostos/silvio.webp" alt="Outra Foto de Perfil">
         <div class="avaliacao">★★★★★</div>
         <p class="comentario">Duvido nao conseguir emprego neste Site!!!
             ja fiz varios freelance!!<br><br><b></b>@proj.integrador</p>
     </div>
     <div class="caixa">
-        <img class="perfil" src="/PROJETO_INTEGRADOR/PROJETO-INTEGRADOR/src/img/rostos/deolane.webp" alt="Outra Foto de Perfil">
+        <img class="perfil" src="/src/img/rostos/ronaldo.png" alt="Outra Foto de Perfil">
         <div class="avaliacao">★★★★★</div>
         <p class="comentario">tao sonhado emprego Home Office que queria , consegui...<br><br><b></b>@proj.integrador</p>
     </div>
+    </main>
 </body>
 </html>
 
