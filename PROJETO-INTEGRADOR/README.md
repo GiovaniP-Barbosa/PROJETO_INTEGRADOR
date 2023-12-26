@@ -1,4 +1,3 @@
-HEAD
 # Projeto Inovador
 
 Bem-vindo ao repositório do Projeto Inovador! Este GitHub foi criado para facilitar a colaboração e o desenvolvimento do nosso projeto em grupo. Aqui estão algumas informações iniciais para começarmos:
@@ -52,7 +51,4 @@ Se você tiver dúvidas ou sugestões, entre em contato conosco através das Iss
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
-
-=======
-# PROJETO_INTEGRADOR
 
