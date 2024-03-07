@@ -1,0 +1,112 @@
+/* Estilização do background inicial*/
+*{
+    margin: 0;
+}
+
+.corpo{
+    margin-top: px;
+    padding-bottom: 150px;
+}
+
+body,html{
+    height: 100%;
+}
+
+.PlanoFundo{
+    background-image: url("/src/FundoSite.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed ;
+
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #377AD4;
+}
+
+/*Estilização da aba recuperação de senha*/
+
+.form-container {
+   width: 400px;
+   height: 300px;
+   text-align: center;
+   border-radius: 10px;
+   margin: auto; 
+   position: absolute; 
+   top: 40px; bottom: 0; left: 0; right: 0; 
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Estilização do rodapé do site*/
+
+.rodape{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 18%;
+    background-color: #377AD4;
+    list-style-type: none;
+}
+    
+.rodape div[id="Titulo"]{
+    font-size: 20px;
+    color: black;
+    margin-top: 1px;
+    margin-left: 15px;
+        
+}
+    
+.rodape p{
+    font-size: 15px;
+     color: white;
+    margin-left: 80px;
+        
+}
+    
+    div[id="logo_rodape"] img{
+       border-radius: 50px;
+       position: relative;
+       top: 100%;
+       transform: translateY(-100%);
+       
+}
+    
+    div[id="logo_rodape"] {
+        display: flex;
+        justify-content: center;
+    
+}
+
+

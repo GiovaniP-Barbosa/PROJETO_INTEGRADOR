@@ -1,0 +1,469 @@
+/* Estilização do background inicial*/
+*{
+    margin: 0;
+}
+
+.corpo{
+    margin-top: px;
+    padding-bottom: 150px;
+}
+
+body,html{
+    height: 100%;
+}
+
+.PlanoFundo{
+    background-image: url("/src/FundoSite.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed ;
+
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #377AD4;
+}
+
+	
+/*Logo e ícones*/
+
+  /*logo*/
+
+header h1 img{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+  /* Menu*/
+
+header nav {
+    display: flex;
+    text-size-adjust: 10px;
+    margin-top: 10px;
+    justify-content: end;
+    margin-top: -65px;
+}
+ header a{
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav p{
+    color: black;
+    font-size: 12px;
+}
+
+
+/* Estilização do Banner*/
+.carrossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: 800px;
+    border-radius: 20px;
+    margin: 20px auto;
+    
+    
+}
+
+.container{
+    display:flex ;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    padding-bottom: 10px;
+   
+    
+}
+
+div [class="container"] img{
+    object-fit: cover;
+    height: 500px; 
+    width: 800px;
+    border-radius: 20px;
+   
+}
+
+
+/*Estilização pra o site ficar resposivo*/
+
+@media screen and (max-width:768px) {
+   nav{
+    width: 100%;
+    flex-direction: column;
+    }
+}
+
+/*Barra de pesquisa*/
+.search-box{
+    position: absolute;
+    border: 1px solid #111;
+    min-width:1280px;
+    top:600px;
+    left:21%;
+    transform: translate(-20%, -21%);
+    background:#fff;
+    height: 10px;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    border-radius: 40px;
+    min-width:1200px;
+    padding: 5;
+    color:black;
+    font-size: 16px;
+    line-height: 40px;
+    
+}
+
+/*Titulos das abas*/
+
+div p[id="Pesquisa"]{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-top: 100px;
+  background-color: white;
+  width: 180px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+ 
+}
+
+div p[id="Cronologia"]{
+  font-weight: bold;
+  margin-left: 550px;
+  margin-top: -30px;
+  font-size: 20px;
+  background-color: white;
+  width: 180px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+ 
+}
+
+div p[id="Candidatura"]{
+  font-weight: bold;
+  margin-left: 1020px;
+  margin-top: -30px;
+  font-size: 20px;
+  background-color: white;
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+ ;
+}
+
+
+/*Estilizando pesquisa avançada*/
+
+select[name="ModeloTrabalho"] {
+    display: block;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 40px;
+    min-width:300px
+    
+}
+
+select[name="AreaAtuacao"] {
+    display: block;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 40px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 40px;
+    min-width:300px
+}
+
+select[name="PaisVaga"] {
+    display: block;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 40px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 40px;
+    min-width:300px
+}
+
+select[name="estado"] {
+    display: block;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 40px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 40px;
+    min-width:300px
+}
+
+select[name="FaixaSalarial"] {
+    display: block;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 40px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 40px;
+    min-width:300px
+   
+}
+
+/*Estilizando a Cronologia da publicação*/
+
+
+
+.primeiro-array{
+  background-color:#F0F8FF;
+  margin-top: 10px;
+  padding: 1.1rem 2rem;
+  margin-left: 370px;
+  width: 400px;
+  border-radius: 16px;
+  color: rgb(21, 3, 58);
+  margin-bottom: 1rem;
+  margin-top: -310px;
+  border: 1px solid black
+}
+
+.primeiro-array + .primeiro-array {
+  margin-top: 20px; 
+}
+
+.primeiro-array h3 {
+  margin-bottom: 0.5rem;
+  padding-bottom: .5rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgb(21, 3, 58);;
+}
+
+
+
+.primeiro-array .data {
+  background-color: rgba(250, 250, 250, .5);
+  padding: .5rem;
+  border-radius: 8px;
+  width: 20%;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+.primeiro-array li{
+  background-color: #377AD4;
+  border-radius: 8px;
+  text-align: center;
+  margin:auto;
+  font-size: 12px;
+  height: 100hv;
+  width: 30%;
+  margin-left: 100px;
+  list-style-type: none;
+}
+
+div[id="candidatar"] a {
+  text-decoration: none;
+  margin-top: 30px;
+  
+}
+
+
+
+/*Estilizando minhas candidaturas*/
+
+.segundo-array{
+  background-color:#F0F8FF;
+  margin-top: 10px;
+  padding: 1.1rem 2rem;
+  margin-left: 880px;
+  width: 400px;
+  border-radius: 16px;
+  color: rgb(21, 3, 58);
+  margin-bottom: 1rem;
+  margin-top: -857px;
+  border: 1px solid black
+ 
+}
+
+.segundo-array + .segundo-array {
+  margin-top: 20px; 
+}
+
+.segundo-array h4 {
+  margin-bottom: 0.5rem;
+  padding-bottom: .5rem;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(21, 3, 58);;
+}
+p[id="andamento"]{
+  margin-left: 110px;
+  
+  
+}
+
+div[id="desistir"]{
+background-color: #377AD4;
+border-radius: 8px;
+text-align: center;
+margin:auto;
+font-size: 12px;
+height: 100hv;
+width: 30%;
+margin-left: 285px;
+margin-top: 20px;
+margin-bottom: 50px;
+display: flex;
+
+}
+
+div [id="desistir"] a{
+  text-decoration: none;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+div [id="acessar"] {
+  background-color: #377AD4;
+  border-radius: 8px;
+  text-align: center;
+  margin:auto;
+  font-size: 12px;
+  height: 100hv;
+  width: 30%;
+  margin-left: -35px;
+  margin-top: 70px;
+  margin-bottom: -35px;
+}
+
+div [id="acessar"] a{
+  text-decoration: none;
+  margin-top: 30px;
+  
+}
+
+
+/*Barra de progresso*/
+
+.contador{
+  font-size: 20px;
+  color: #111;
+  text-align: center;
+  margin-top: -120px;
+ 
+ 
+}
+
+.barra-progresso{
+  width: 400px;
+  height: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: black;
+  margin-left: 5px;
+}
+
+.barra-progresso .progresso{
+  width: 200px;
+  height: 20px;
+  border-radius: 15px;
+  background-color:  #377AD4;
+}
+
+.barra-progresso .progresso.active::before{
+  content: 'Processo finalizado';
+  position: absolute;
+  font-size: 13px;
+  top:3%;
+  left: 200px;
+  color: black;
+  transform: translateX(-50%);
+}
+
+
+.efeito_txt{
+  animation: animacao1 .5s ease-in-out .1;
+
+}
+
+@keyframes animacao {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .2s;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+
+/* Estilização do rodapé do site*/
+
+.rodape{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 18%;
+    background-color: #377AD4;
+    list-style-type: none;
+}
+    
+    .rodape div[id="Titulo"]{
+        font-size: 20px;
+        color: black;
+        margin-top: 1px;
+        margin-left: 15px;
+        
+}
+    
+    .rodape p{
+        font-size: 15px;
+        color: white;
+        margin-left: 80px;
+        
+}
+    
+    div[id="logo_rodape"] img{
+       border-radius: 50px;
+       position: relative;
+       top: 100%;
+       transform: translateY(-100%);
+       
+}
+    
+    div[id="logo_rodape"] {
+        display: flex;
+        justify-content: center;
+    
+}
+
+
+
+
+
+

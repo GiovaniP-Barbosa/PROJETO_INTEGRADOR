@@ -1,0 +1,289 @@
+/* Estilização do background inicial*/
+*{
+    margin: 0;
+}
+
+.corpo{
+    margin-top: px;
+    padding-bottom: 150px;
+}
+
+body,html{
+    height: 100%;
+}
+
+.PlanoFundo{
+    background-image: url("/src/FundoSite.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed ;
+
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #377AD4;
+}
+
+
+/*Logo e ícones*/
+
+  /*logo*/
+
+header h1 img{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+  /* Menu*/
+
+header nav {
+    display: flex;
+    text-size-adjust: 10px;
+    margin-top: 10px;
+    justify-content: end;
+    margin-top: -65px;
+}
+ header a{
+    padding: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav p{
+    color: black;
+    font-size: 12px;
+}
+
+/*Estilização do corpo da pagina*/
+
+.column {
+    width: 100%;
+}
+
+.course-details,
+.container {
+    background-color: #9c9a9a;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rating label:hover,
+.rating label:hover~label,
+.rating input:checked~label {
+    color: #fdd835;
+}
+
+.comment {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #1f80d5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.module {
+    margin-bottom: 10px;
+}
+
+.generate-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: flex-start;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/*.logo {
+    margin-right: auto;
+}*/
+
+.botao {
+    background-color: #1f80d5;
+    border: solid 1px;
+    border-radius: 20px;
+    color: #1f80d5;
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.botao:hover {
+    background-color: #1f80d5;
+    color: white;
+    transform: scale(1.2)
+}
+
+.search-box {
+    position: absolute;
+    top: 11.5%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: #c9c9c9;
+    height: 20px;
+    padding: 5px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin: 55px;
+}
+
+input::placeholder {
+    font-size: 1.7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #aeaeae;
+}
+
+.search-text {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 260px;
+    transition: 0.4s;
+}
+
+.search-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.loupe-white {
+    display: none;
+}
+
+.search-box:hover .search-text {
+    width: 32rem;
+    padding-left: 2rem;
+}
+
+.search-box:hover .search-btn {
+    background-color: #447ce7;
+}
+
+.search-box:hover .search-btn .loupe-blue {
+    display: none;
+}
+
+.search-box:hover .search-btn .loupe-white {
+    display: block;
+}
+
+
+/*Estilização pra o site ficar resposivo*/
+
+@media screen and (max-width:768px) {
+   nav{
+    width: 100%;
+    flex-direction: column;
+    }
+}
+
+
+/* Estilização do rodapé do site*/
+
+.rodape{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 18%;
+    background-color: #377AD4;
+    list-style-type: none;
+}
+    
+    .rodape div[id="Titulo"]{
+        font-size: 20px;
+        color: black;
+        margin-top: 1px;
+        margin-left: 15px;
+        
+}
+    
+    .rodape p{
+        font-size: 15px;
+        color: white;
+        margin-left: 80px;
+        
+}
+    
+    div[id="logo_rodape"] img{
+       border-radius: 50px;
+       position: relative;
+       top: 100%;
+       transform: translateY(-100%);
+       
+}
+    
+    div[id="logo_rodape"] {
+        display: flex;
+        justify-content: center;
+    
+}
+
+

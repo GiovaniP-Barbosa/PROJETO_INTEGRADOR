@@ -1,0 +1,135 @@
+
+/* Estilização do background inicial*/
+*{
+    margin: 0;
+}
+
+.corpo{
+    margin-top: px;
+    padding-bottom: 150px;
+}
+
+body,html{
+    height: 100%;
+}
+
+.PlanoFundo{
+    background-image: url("/src/FundoSite.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed ;
+
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #377AD4;
+}
+
+/*Configuração do formulário de entrada*/
+
+h1{
+    text-align: center ;
+    display: flex;
+    padding: 20px;
+    margin-left: 50px;
+    font-style: initial;
+    font-weight:100;
+}
+
+
+h2{
+    text-align: center;
+    margin: auto; 
+    position: absolute; 
+    top: 420px; bottom: 0; left: 0; right: 0;
+}
+
+h2 a {
+    text-decoration: none;
+    font-weight: 100;
+    font-style: normal;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+form {
+    background: #F0F8FF;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto; 
+    position: absolute; 
+    top: -80px; bottom: 0; left: 0; right: 0; 
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    width: 260px;
+    padding: 10px;
+    background-color: #007bff;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilização do rodapé do site*/
+
+.rodape{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 18%;
+    background-color: #377AD4;
+    list-style-type: none;
+}
+    
+.rodape div[id="Titulo"]{
+    font-size: 20px;
+    color: black;
+    margin-top: 1px;
+    margin-left: 15px;
+        
+}
+    
+.rodape p{
+    font-size: 15px;
+     color: white;
+    margin-left: 80px;
+        
+}
+    
+    div[id="logo_rodape"] img{
+       border-radius: 50px;
+       position: relative;
+       top: 100%;
+       transform: translateY(-100%);
+       
+}
+    
+    div[id="logo_rodape"] {
+        display: flex;
+        justify-content: center;
+    
+}
