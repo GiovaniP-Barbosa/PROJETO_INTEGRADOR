@@ -3,26 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/Inicio/style.css">
   <script src="/Inicio/script.js" defer></script>
   <title>+Jobs</title>
 </head>
-<body >
-  <header>  
-    <main>
-    <form >
-        <h1>Digite Login e Senha</h1>
-        <input type="text" placeholder="e-mail ou usuário" id="login" >
-        <input type="password" placeholder="senha" id="senha" >
-        <input type="submit" value="Entrar" onclick="logar(); return false">
-    </form>
-    <h2>
-      <a href="/Resgante_senha/Senha.html">Esqueceu a Senha ?</a>
-    </h2>
-
-  
-   </main>
+<body class="PlanoFundo">
+  <header>
+     <h1>
+        <img src="/src/logo.jpg" alt=""  width="25px" height="25px">
+        <button id="entrar" type="button" onclick="location.href='login.html';">Entrar</button> 
+        <button id="cadastrar" type="button" onclick="location.href= 'Cadastro.html';">Cadastrar-se</button> 
+     </h1>
   </header>
+
+   <main class="corpo">
+
+    <div class="carrossel">
+      <div class="container" id="img">
+        <img src="/src/Banner 01.png" alt="">
+        <img src="/src/Banner 02.png" alt="">
+        <img src="/src/Banner 03.png" alt="">
+      </div>
+   </div> 
+   </main>
+
   <footer class="rodape"> 
     <div class="desenvolvedores">
       <li>

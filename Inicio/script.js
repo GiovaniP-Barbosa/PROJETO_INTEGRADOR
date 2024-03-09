@@ -7,7 +7,7 @@ function logar() {
     
     if (login == "admin" && senha == "admin") {
         alert("Login efetuado.");
-        location.href = "/Perfil/Perfil.html";
+        location.href = "perfil.html";
         
     } else {
         alert("Nome de usuário ou senha incorretos. Por favor, tente novamente.")
@@ -24,7 +24,7 @@ function Cadastrar() {
     
     if (senha == confirmarSenha) {
         alert("Cadastro Realizado.");
-        location.href = "/Perfil/Perfil.html";
+        location.href = "perfil.html";
 
     } else {
         alert("As senhas são diferentes.Tente novamente")
