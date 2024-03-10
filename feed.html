@@ -18,17 +18,17 @@
       <a href="index.html"><img src="/src/vagas.png" alt="" width="25px" height="25px"><p>Vagas</p>
       <a href="/curso.html"><img src="/src/cursos.png" alt="" width="25px" height="25px"><p>Cursos</p>
       <a href="/feed.html"><img src="/src/feed.png" alt="" width="25px" height="25px"><p>Feed</p>
-      <a href="notificacoes.html"><img src="/src/notificacao.png" alt="" width="25px" height="25px"><p>Noticicações</p>
+      <a href="/sobre_nos.html"><img src="/src/quem.png" alt="" width="25px" height="25px"><p>Sobre Nós</p>
       <a href="/perfil.html"><img src="/src/perfil.png" alt="" width="25px" height="25px"><p>Perfil</p>
      </nav>
   </header>
 
-    
+    <main class="corpo">
     <h2>
       <a>CASOS DE SUCESSO !!!</a>
     </h2>
        
-  <main class="comentarios2">
+  <main class="comentarios">
      <div class="caixa">
         <img class="perfil" src="/src/Alan Turing.jpeg" alt="Outra Foto de Perfil">
          <div class="avaliacao">★★★★★</div>
@@ -57,24 +57,33 @@
   </div>
   </main> 
 
-  <h3>
-    <a>Deixe o seu Feedback</a>
-  </h3>
- <main class="corpo_feedback">
-     <form class="comentarios1">
-       <form action="submit_comment.php" method="post">
-         <label for="instagram_profile">Perfil do Instagram:</label><br><br>
-         <input type="text" id="instagram_profile" name="instagram_profile" placeholder="Insira o @(Instagram)" required><br><br>
-      
-         <label for="rating" >Avaliação da Pag.:</label><br><br>
-         <input type="number" id="rating" name="rating" min="1" max="5" placeholder="Insira a avaliação (de 1 a 5)" required><br><br>
-      
-         <label for="comment">Comentário:</label>
-         <textarea id="comment" name="comment" placeholder="Insira o seu comentário aqui" rows="4"  cols="50" ></textarea>
-         <input type="submit" value="Enviar Comentário" >
-       </form>
-     </form>
+    <h3>
+      <a>Deixe o seu Feedback</a>
+    </h3>
+   <div class="corpo_feedback">
+
+     <div class="container">
+       <h1>Avalie nosso site</h1>
+        <form action="#" method="post" id="courseRatingForm">
+          <div class="rating">
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">★</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">★</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">★</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">★</label>
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">★</label>
+      </div>
+        <textarea class="comment" placeholder="Deixe um comentário..." name="comment" rows="4"></textarea>
+        <input class="submit-btn" type="submit" value="Enviar Avaliação">
+      </form>
+    </div>
+
   </main>
+
   <footer class="rodape"> 
     <div class="desenvolvedores">
       <li>

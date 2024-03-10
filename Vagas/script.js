@@ -72,6 +72,7 @@ const arrayPostagens1 = [
     elementoMain.appendChild(novoPost);
   });
 
+ 
 
   /*Renderização da aba Minhas candidaturas*/
 

@@ -5,7 +5,7 @@
 
 .corpo{
     margin-top: px;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
 }
 
 body,html{
@@ -13,7 +13,7 @@ body,html{
 }
 
 .PlanoFundo{
-    background-image: url("/src/FundoSite.avif");
+    background-image: url("https://carreiras.empregos.com.br/wp-content/uploads/2023/05/4-testes-para-recrutamento-e-selecao-480x271.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -63,16 +63,235 @@ header nav p{
     font-size: 12px;
 }
 
-/*Frase*/
 
-h2{
-    text-align: center;
-    margin: auto; 
-    color: red;
-    position: absolute; 
-    top: 150px; bottom: 0; left: 0; right: 0;
 
+
+/*Estilização da foto do perfil*/
+
+#nome{
+    margin-left: 220px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
 }
+
+.perfil {
+    width: 200px; 
+    height: 200px; 
+    margin-left: 200px;
+    border-radius: 50%; 
+    margin-top: 50px;
+    border: 1px solid black;
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+
+.sobre {
+    text-align: center; 
+    width: 400px;
+    height: 200px;
+    margin-left: 100px;
+    background: #fff; 
+    border-radius: 10px;
+  }
+
+  #sobre{
+    color: black;
+    font-size: 20px;
+  }
+  
+  .sobre #sobre {
+    padding: 10px;
+    display: block; 
+    margin-bottom: 10px; 
+  }
+  
+  .sobre textarea {
+    width: 350px;
+    margin-bottom: 10px; 
+  }
+  
+  .sobre .submit-btn {
+    display: block; 
+    width: 150px; 
+    padding: 10px; 
+    margin-left: 120px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  }
+  
+  .sobre .submit-btn:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+  }
+
+
+  #area_atuacao {
+    text-align: center; 
+    background: #fff;
+    width: 380px;
+    padding: 10px;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  #area_atuacao a {
+    padding: 10px;
+    margin-bottom: 5px; 
+    font-size: 20px;
+    
+  }
+  
+  #area_atuacao select {
+    display: inline-block; 
+    width: 300px; 
+    margin-left: -10px;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-sizing: border-box;
+  }
+  
+  #area_atuacao option {
+    padding: 5px; /* Adiciona preenchimento interno para as opções */
+  }
+
+/* Experiênca nas empresas*/
+
+body {
+    position: relative; 
+    margin: 0px; 
+}
+form a{
+    color: black;
+    margin-left: 240px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form[id="01"] {
+    position: absolute; 
+    width: 550px;
+    top: 100px; 
+    right: 30px; 
+    left: 700px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+form[id="02"] {
+    position: absolute; 
+    width: 550px;
+    top: 550px; 
+    right: 30px; 
+    left: 700px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+  label {
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+
+  select {
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+
+  input[type="date"]{
+    margin-left: 20px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 500px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 400px;
+    margin-left: 80px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+
+  .complementares {
+    text-align: center; 
+    width: 380px;
+    height: 200px;
+    margin-left: 100px;
+    background: #fff; 
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  #complementares{
+    color: black;
+    font-size: 20px;
+   
+  }
+  
+  .complementares #complementares {
+    padding: 10px;
+    display: block; 
+    margin-bottom: 10px; 
+  }
+  
+  .complementares textarea {
+    width: 350px;
+    margin-bottom: 10px; 
+  }
+  
+  .complementares .submit-btn {
+    display: block; 
+    width: 150px; 
+    padding: 10px; 
+    margin-left: 120px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  }
+  
+  .complementares .submit-btn:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+  }
+
 
 
 /*Estilização pra o site ficar resposivo*/

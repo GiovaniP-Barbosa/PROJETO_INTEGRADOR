@@ -13,7 +13,7 @@ body,html{
 }
 
 .PlanoFundo{
-    background-image: url("/src/FundoSite.avif");
+    background-image: url("https://carreiras.empregos.com.br/wp-content/uploads/2023/05/4-testes-para-recrutamento-e-selecao-480x271.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,8 +51,7 @@ header nav {
     margin-top: -65px;
 }
  header a{
-    padding: 10px;
-    margin-top: 5px;
+    padding: 15px;
     text-decoration: none;
     text-align: center;
 }
@@ -62,19 +61,121 @@ header nav p{
     font-size: 12px;
 }
 
-/*Estilização do corpo da pagina*/
+/*Estilização do acesso rápido*/
 
-.column {
-    width: 100%;
+#acessos_rapidos {
+    margin-top: -160px;
+    width: 1343px; /* Define a largura do elemento como 100% da largura da página */
+    background: #9dafc2;
+    padding: 40px;   
 }
 
-.course-details,
+div[id="acessos_rapidos"] a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+ 
+}
+
+/*Estilização das abas cursos*/
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+.course {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.6s, transform 0.5s; 
+}
+
+.course:hover {
+    box-shadow: 0 5px 15px rgba(2, 0, 0, 0.9); /* Adiciona sombra */
+    transform: translateY(-10px); /* Move o elemento para cima */
+}
+
+.course img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.course h2 {
+    margin-top: 0;
+}
+
+#matricula {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#matricula a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 auto; /* Define margens automáticas */
+}
+
+#matricula a:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/*Barra de pesquisa*/
+.search-box{
+    position: absolute;
+    border: 1px solid #111;
+    min-width:600px;
+    top:180px;
+    left:11%;
+    transform: translate(-20%, -21%);
+    background:#fff;
+    height: 10px;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    border-radius: 40px;
+    min-width:600px;
+    padding: 10px;
+    color:black;
+    font-size: 16px;
+    line-height: 40px;
+    
+    
+}
+
+/*Estilização da avaliação*/
+
 .container {
-    background-color: #9c9a9a;
-    padding: 5px;
+    background-color:#e7e3e3;
+    margin-top: 50px;
+    border: 1px solid black;
     border-radius: 8px;
     text-align: center;
-    width: 60%;
+    padding: 20px;
+    width: 500px;
+    height: 250px;
+    margin-left: 30px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -99,14 +200,15 @@ header nav p{
 .rating label {
     cursor: pointer;
     font-size: 30px;
-    color: #ccc;
+    color:white;
 }
 
 .rating label:hover,
 .rating label:hover~label,
 .rating input:checked~label {
-    color: #fdd835;
+    color: yellow;
 }
+
 
 .comment {
     width: 100%;
@@ -130,110 +232,81 @@ header nav p{
     margin-bottom: 10px;
 }
 
-.generate-btn {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/*Certificado*/
+
+
+.column {
+    flex: 0 0 50%; /* Define a largura da coluna */
+    max-width: 50%; /* Define a largura máxima da coluna */
 }
 
-nav {
-    display: flex;
-    align-items: flex-start;
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #333;
+form {
+    text-align: center;
 }
 
-/*.logo {
-    margin-right: auto;
-}*/
-
-.botao {
-    background-color: #1f80d5;
-    border: solid 1px;
-    border-radius: 20px;
-    color: #1f80d5;
-    background-color: white;
-    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
-}
-
-.botao:hover {
-    background-color: #1f80d5;
-    color: white;
-    transform: scale(1.2)
-}
-
-.search-box {
-    position: absolute;
-    top: 11.5%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    background-color: #c9c9c9;
-    height: 20px;
-    padding: 5px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-}
-
-button {
-    margin: 55px;
-}
-
-input::placeholder {
-    font-size: 1.7rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #aeaeae;
-}
-
-.search-text {
-    float: left;
-    background-color: transparent;
-    padding-left: 5px;
-    font-style: italic;
-    font-size: 18px;
-    border: none;
-    height: 32px;
-    width: 260px;
-    transition: 0.4s;
-}
-
-.search-btn {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.loupe-white {
-    display: none;
-}
-
-.search-box:hover .search-text {
-    width: 32rem;
-    padding-left: 2rem;
-}
-
-.search-box:hover .search-btn {
-    background-color: #447ce7;
-}
-
-.search-box:hover .search-btn .loupe-blue {
-    display: none;
-}
-
-.search-box:hover .search-btn .loupe-white {
+label {
     display: block;
+    margin-bottom: 10px;
 }
+
+#userName {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.generate-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generate-btn:hover {
+    background-color: #0056b3;
+}
+
+#certificate {
+    margin-top: 20px;
+}
+
+/*Texto chamativo*/
+body {
+    position: relative; /* Define a posição relativa para o body */
+    margin: 0; /* Remove as margens padrão do body */
+}
+
+#texto {
+    position: absolute; /* Define a posição absoluta */
+    top: 1050px; /* Alinha o topo do contêiner com o topo do body */
+    right: 30px; /* Alinha o contêiner com o canto direito do body */
+    left: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#texto p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+ 
 
 
 /*Estilização pra o site ficar resposivo*/
@@ -244,6 +317,8 @@ input::placeholder {
     flex-direction: column;
     }
 }
+
+
 
 
 /* Estilização do rodapé do site*/

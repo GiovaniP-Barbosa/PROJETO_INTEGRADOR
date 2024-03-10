@@ -6,10 +6,16 @@
 
 body,html{
     height: 100%;
+    
+}
+
+.corpo{
+    margin-top: px;
+    padding-bottom: 50px;
 }
 
 .PlanoFundo{
-    background-image: url("/src/FundoSite.avif");
+    background-image: url("https://carreiras.empregos.com.br/wp-content/uploads/2023/05/4-testes-para-recrutamento-e-selecao-480x271.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -86,21 +92,6 @@ header nav p{
     padding-bottom: 120px;
 }
 
-   .comentarios1{
-    background-color:#F0F8FF;
-    margin-left: 500px;
-    margin-top: 20px;
-    width: 400px;
-    height: 300px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 20px;
-    border: 1px solid black;
-   
-  }
-
-
- 
    h2{
     background-color: #F0F8FF;
     width: 500px;
@@ -127,6 +118,7 @@ header nav p{
     padding: 20px;
    }
 
+
    .caixa {
     border: 2px solid chocolate;
     background-color: #F0F8FF;
@@ -137,7 +129,6 @@ header nav p{
     width: 200px;
     text-align: center;
     align-items: center;
-    
     
     
 }
@@ -155,25 +146,7 @@ header nav p{
     margin-bottom: 10px;
 }
 
-.comentario {
-    font-style: italic;
-    color: #666;
-}
-
-.conteiner{
-  display: flex;
-  justify-content: space-around;
-}
-.coments{
-display: flex;
-justify-content: end;
-}
-nav.coments a img {
-width: 100px; /* Defina o tamanho desejado para as imagens */
-height:100px; /* Defina a altura desejada para as imagens */
-}
-
-.comentarios2{
+.comentarios{
 display: flex;
 justify-content: space-around;
 align-items:baseline;
@@ -181,6 +154,69 @@ flex-wrap: wrapinicio;
 
 }
 
+/*Estilização da avaliação*/
+
+.container {
+    background-color:#e7e3e3;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 100px 0px 100px 0px; 
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    height: 250px;
+    margin-left: 450px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    font-size: 30px;
+    color:white;
+}
+
+.rating label:hover,
+.rating label:hover~label,
+.rating input:checked~label {
+    color: yellow;
+}
+
+
+.comment {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #1f80d5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 
   /* Estilização do rodapé do site*/

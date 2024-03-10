@@ -18,14 +18,183 @@
       <a href="index.html"><img src="/src/vagas.png" alt="" width="25px" height="25px"><p>Vagas</p>
       <a href="/curso.html"><img src="/src/cursos.png" alt="" width="25px" height="25px"><p>Cursos</p>
       <a href="/feed.html"><img src="/src/feed.png" alt="" width="25px" height="25px"><p>Feed</p>
-      <a href="notificacoes.html"><img src="/src/notificacao.png" alt="" width="25px" height="25px"><p>Noticicações</p>
+      <a href="/sobre_nos.html"><img src="/src/quem.png" alt="" width="25px" height="25px"><p>Sobre Nós</p>
       <a href="/perfil.html"><img src="/src/perfil.png" alt="" width="25px" height="25px"><p>Perfil</p>
     </nav>
   </header>
 
-   <main>
+   <main class="corpo" >
  
-    <h2> Você está Logado</h2>
+       <div id="foto">
+        <img class="perfil" src="/src/avatar-de-perfil.png" alt=""><br>
+       </div>
+
+       <div id="nome">
+        <a>
+          Nome Completo
+        </a>
+       </div>
+
+       <div class="sobre">
+          <a id="sobre"> Sobre </a>
+          <textarea class="comment" placeholder="Escreva sobre você..." name="comment" rows="4"></textarea>
+          <input class="submit-btn" type="submit" value="Enviar">
+       </div>
+
+      <div id="area_atuacao">
+        <a>Escolha a Area de Atuação</a><br>
+        <select id="area_atuacao" name="area_atuacao">
+          <option value="">Selecione...</option>
+          <option value="TI">Tecnologia da Informação</option>
+          <option value="Engenharia">Engenharia</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Recursos Humanos">Recursos Humanos</option>
+          <option value="Vendas">Vendas</option>
+          <option value="Educação">Educação</option>
+          <option value="Saúde">Saúde</option>
+          <option value="Finanças">Finanças</option>
+          <option value="Arquitetura">Arquitetura</option>
+          <option value="Comunicação">Comunicação</option>
+          <option value="Jurídico">Jurídico</option>
+          <option value="Design">Design</option>
+          <option value="Logística">Logística</option>
+          <option value="Produção">Produção</option>
+          <option value="Serviços">Serviços</option>
+        </select>
+      </div>
+
+       <div id="experiencia">
+        
+        <form action="#" method="post" id="01">
+          <a>Experiência</a><br>
+          <label for="empresa">Empresa que Trabalhou:</label><br>
+          <input type="text" id="empresa" name="empresa" required><br>
+        
+          <label for="inicio_experiencia">Início da Experiência:</label><br>
+          <input type="date" id="inicio_experiencia" name="inicio_experiencia" required><br><br>
+        
+          <label for="fim_experiencia">Fim da Experiência:</label><br>
+          <input type="date" id="fim_experiencia" name="fim_experiencia"><br><br>
+        
+          <label for="cargo">Cargo:</label><br>
+          <select id="cargo" name="cargo" required>
+            <option value="">Selecione...</option>
+            <option value="Analista de Sistemas">Analista de Sistemas</option>
+            <option value="Engenheiro de Software">Engenheiro de Software</option>
+            <option value="Designer Gráfico">Designer Gráfico</option>
+            <option value="Gerente de Projetos">Gerente de Projetos</option>
+            <option value="Assistente Administrativo">Assistente Administrativo</option>
+            <option value="Analista de Marketing">Analista de Marketing</option>
+            <option value="Recrutador">Recrutador</option>
+            <option value="Analista Financeiro">Analista Financeiro</option>
+            <option value="Professor">Professor</option>
+            <option value="Enfermeiro">Enfermeiro</option>
+            <option value="Arquiteto">Arquiteto</option>
+            <option value="Advogado">Advogado</option>
+            <option value="Operador de Logística">Operador de Logística</option>
+            <option value="Técnico de Produção">Técnico de Produção</option>
+            <option value="Atendente de Serviços">Atendente de Serviços</option>
+          </select><br><br>
+      
+          <label for="atividade">Atividade Exercida:</label><br>
+          <select id="atividade" name="atividade" required>
+            <option value="">Selecione...</option>
+            <option value="Desenvolvimento de Software">Desenvolvimento de Software</option>
+            <option value="Suporte Técnico">Suporte Técnico</option>
+            <option value="Design Gráfico">Design Gráfico</option>
+            <option value="Gestão de Projetos">Gestão de Projetos</option>
+            <option value="Atendimento ao Cliente">Atendimento ao Cliente</option>
+            <option value="Marketing Digital">Marketing Digital</option>
+            <option value="Recrutamento e Seleção">Recrutamento e Seleção</option>
+            <option value="Contabilidade">Contabilidade</option>
+            <option value="Ensino">Ensino</option>
+            <option value="Assistência Médica">Assistência Médica</option>
+            <option value="Projeto de Arquitetura">Projeto de Arquitetura</option>
+            <option value="Advocacia">Advocacia</option>
+            <option value="Gestão de Estoque">Gestão de Estoque</option>
+            <option value="Produção Industrial">Produção Industrial</option>
+            <option value="Atendimento ao Público">Atendimento ao Público</option>
+          </select><br><br>
+        
+          <input type="submit" value="Enviar">
+        </form>
+       </div>
+
+       <div id="formacao">
+        
+        <form action="#" method="post" id="02">
+          <a>Formação</a><br>
+          <label for="">Intituição de Ensino:</label><br>
+          <input type="text" id="ensino" name="ensino" required><br>
+
+          <label for="nivel_ensino">Nível de Ensino:</label><br>
+          <select id="nivel_ensino" name="nivel_ensino" required>
+            <option value="">Selecione...</option>
+            <option value="Ensino Fundamental">Ensino Fundamental</option>
+            <option value="Ensino Médio">Ensino Médio</option>
+            <option value="Ensino Técnico">Ensino Técnico</option>
+            <option value="Graduação">Graduação</option>
+            <option value="Pós-graduação">Pós-graduação</option>
+            <option value="Mestrado">Mestrado</option>
+            <option value="Doutorado">Doutorado</option>
+            <option value="Outro">Outro</option>
+          </select><br><br>
+        
+
+          <label for="curso">Curso:</label><br>
+          <select id="curso" name="curso" required>
+            <option value="">Selecione...</option>
+            <option value="Informática Básica">Informática Básica</option>
+            <option value="Web Design">Web Design</option>
+            <option value="Marketing Digital">Marketing Digital</option>
+            <option value="Gestão de Projetos">Gestão de Projetos</option>
+            <option value="Administração">Administração</option>
+            <option value="Contabilidade">Contabilidade</option>
+            <option value="Inglês">Inglês</option>
+            <option value="Espanhol">Espanhol</option>
+            <option value="Francês">Francês</option>
+            <option value="Alemão">Alemão</option>
+            <option value="Programação Java">Programação Java</option>
+            <option value="Programação Python">Programação Python</option>
+            <option value="Redes de Computadores">Redes de Computadores</option>
+            <option value="Design Gráfico">Design Gráfico</option>
+            <option value="Fotografia">Fotografia</option>
+            <option value="Gestão Financeira">Gestão Financeira</option>
+            <option value="Marketing de Conteúdo">Marketing de Conteúdo</option>
+            <option value="Recursos Humanos">Recursos Humanos</option>
+            <option value="Gestão de Vendas">Gestão de Vendas</option>
+            <option value="Desenvolvimento Android">Desenvolvimento Android</option>
+            <option value="Desenvolvimento iOS">Desenvolvimento iOS</option>
+            <option value="Programação C++">Programação C++</option>
+            <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+            <option value="Gestão de Projetos Ágeis">Gestão de Projetos Ágeis</option>
+            <option value="Gestão de Pessoas">Gestão de Pessoas</option>
+            <option value="Marketing de Mídias Sociais">Marketing de Mídias Sociais</option>
+            <option value="Arquitetura de Software">Arquitetura de Software</option>
+            <option value="Gestão de Negócios">Gestão de Negócios</option>
+            <option value="UX/UI Design">UX/UI Design</option>
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Ciência de Dados">Ciência de Dados</option>
+          </select><br><br>
+          
+          <label for="inicio">Início:</label><br>
+          <input type="date" id="inicio" name="inicio" required><br><br>
+        
+          <label for="fim">Fim:</label><br>
+          <input type="date" id="fim" name="fim"><br><br>
+          
+          <input type="submit" value="Enviar">
+        </form>
+       </div>
+
+       <div class="complementares">
+        <a id="complementares"> Infomações Complementares </a>
+        <textarea class="comment" placeholder="Escreva aqui..." name="comment" rows="4"></textarea>
+        <input class="submit-btn" type="submit" value="Enviar">
+       </div>
+
+
+      
 
    </main>
 
